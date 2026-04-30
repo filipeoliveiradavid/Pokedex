@@ -124,14 +124,6 @@ A aplicação consome a API pública:
 
 ---
 
-## 🔗 Acesso à aplicação
-
-Caso tenha versão online ou APK:
-
-👉 Adicione aqui o link do app ou download
-
----
-
 ## 📄 Licença
 
 Este projeto está sob a licença MIT.
