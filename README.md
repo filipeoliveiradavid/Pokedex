@@ -4,7 +4,7 @@ Aplicação desenvolvida com **Flutter + Firebase**, que consome uma API de Pok�
 
 ---
 
-## 📸 Prints da Aplicação
+### 📸 Prints da Aplicação
 
 Tela inicial:
 
