@@ -1,8 +1,9 @@
-# 📱 Pokédex Flutter
+# 📱 Pokedex
 
-Aplicação mobile desenvolvida em **Flutter** que consome dados da **PokéAPI** e permite favoritar Pokémons utilizando **Firebase Firestore**.
+Aplicação desenvolvida com **Flutter + Firebase**, que consome uma API de Pokémons, permitindo visualizar, buscar e explorar informações de diferentes espécies de forma simples e interativa.
 
 ---
+
 ## 📸 Prints da Aplicação
 
 Tela inicial:
@@ -27,65 +28,114 @@ Firebase (Depois):
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 Tecnologias Utilizadas
 
-- 🔍 Listagem de Pokémons via API
-- 🖼️ Exibição de imagem e nome
-- ⭐ Favoritar e desfavoritar Pokémons
-- 🔎 Pesquisa em tempo real por nome
-- ☁️ Integração com Firebase Firestore
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- Flutter
-- Dart
-- FlutLab
-- PokéAPI
-- Firebase
-- Cloud Firestore
+| Tecnologia  | Função                                  |
+| ----------- | --------------------------------------- |
+| Flutter     | Desenvolvimento da interface mobile/web |
+| Dart        | Linguagem principal da aplicação        |
+| Firebase    | Backend (configuração e integração)     |
+| API PokéAPI | Fonte de dados dos Pokémons             |
 
 ---
 
-## 🌐 API Utilizada
+## 📁 Estrutura do Projeto
 
-A aplicação consome dados da API pública:
-
-https://pokeapi.co/api/v2/pokemon
+```
+lib/
+├── main.dart                # Ponto de entrada da aplicação
+├── api_service.dart         # Comunicação com a API de Pokémons
+├── firebase_service.dart    # Integração com Firebase
+├── pokemon.dart             # Modelagem dos dados do Pokémon
+├── firebase_options.dart    # Configurações do Firebase
+```
 
 ---
 
-## ☁️ Integração com Firebase
+## 🗂️ Arquitetura e Responsabilidades
 
-O Firebase Firestore foi utilizado para armazenar os Pokémons favoritos.
+### `main.dart`
 
-### 📁 Coleção:
-favoritos
+Responsável por inicializar o Firebase e iniciar a aplicação Flutter.
 
-### 📌 Estrutura dos dados:
+### `api_service.dart`
 
-```json
-{
-  "nome": "pikachu",
-  "imagem": "url_da_imagem",
-  "favoritadoEm": "timestamp"
-}
-🧠 Arquitetura da Aplicação
-Usuário
-  ↓
-Interface Flutter (HomePage)
-  ↓
-ApiService → PokéAPI
-  ↓
-FirebaseService → Firestore
+Centraliza todas as chamadas HTTP para a API de Pokémons.
 
-▶️ Como Executar o Projeto
-Clone o repositório:
-git clone https://github.com/filipeoliveiradavid/Repositorio-nome-pokedex-flutter.git
-Acesse a pasta:
-cd pokedex
-Instale as dependências:
+### `firebase_service.dart`
+
+Gerencia a comunicação com o Firebase.
+
+### `pokemon.dart`
+
+Define a estrutura de dados utilizada na aplicação.
+
+---
+
+## ⚙️ Pré-requisitos
+
+Antes de iniciar, certifique-se de ter instalado:
+
+* Flutter SDK
+* Dart
+* Conta no Firebase configurada
+
+---
+
+## 🛠️ Como Executar o Projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/filipeoliveiradavid/Pokedex.git
+cd Pokedex
+```
+
+### 2. Instale as dependências
+
+```bash
 flutter pub get
-Execute o projeto:
+```
+
+### 3. Configure o Firebase
+
+Certifique-se de que o arquivo `firebase_options.dart` esteja corretamente configurado com os dados do seu projeto Firebase.
+
+### 4. Execute o projeto
+
+```bash
 flutter run
+```
+
+---
+
+## 🔌 API Utilizada
+
+A aplicação consome a API pública:
+
+* PokéAPI → https://pokeapi.co/
+
+**Exemplos de uso:**
+
+| Endpoint          | Descrição              |
+| ----------------- | ---------------------- |
+| `/pokemon`        | Lista de Pokémons      |
+| `/pokemon/{name}` | Detalhes de um Pokémon |
+
+---
+
+## 🔗 Acesso à aplicação
+
+Caso tenha versão online ou APK:
+
+👉 Adicione aqui o link do app ou download
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+<p align="center">Desenvolvido com Flutter + Firebase</p>
