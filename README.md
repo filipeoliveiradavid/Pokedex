@@ -6,18 +6,23 @@ Aplicação mobile desenvolvida em **Flutter** que consome dados da **PokéAPI**
 ## 📸 Prints da Aplicação
 
 Tela inicial:
+
 ![Tela 1](pokedex%20(2)/assets/print1.png)
 
 Opção de Busca:
+
 ![Tela 2](pokedex%20(2)/assets/print2.png)
 
 Favoritar Pokémon:
+
 ![Tela 3](pokedex%20(2)/assets/print4.png)
 
 Firebase (Antes):
+
 ![Tela 4](pokedex%20(2)/assets/print3.png)
 
 Firebase (Depois):
+
 ![Tela 5](pokedex%20(2)/assets/print5.png)
 
 ---
